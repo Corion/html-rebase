@@ -1,8 +1,9 @@
 .gitignore
+Changes
 lib/HTML/Rebase.pm
 Makefile.PL
 MANIFEST
-MANIFEST.skip
+MANIFEST.SKIP
 META.json
 META.yml
 README
