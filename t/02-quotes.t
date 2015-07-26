@@ -1,9 +1,8 @@
 #!perl -wT
 use strict;
 use Test::More tests => 2;
-use HTML::RebaseURL 'rebase_html';
 
-use HTML::RebaseURL qw(rebase_html rebase_css);
+use HTML::Rebase qw(rebase_html rebase_css);
 
 for my $case (
     ['<a href=http://localhost:5000/index.html >Go to home page</a>', '<a href="index.html" >Go to home page</a>','ends with blank'],

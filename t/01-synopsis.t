@@ -1,9 +1,8 @@
 #!perl -wT
 use strict;
 use Test::More tests => 1;
-use HTML::RebaseURL 'rebase_html';
 
-use HTML::RebaseURL qw(rebase_html rebase_css);
+use HTML::Rebase qw(rebase_html rebase_css);
 my $html = <<HTML;
   <html>
   <head>

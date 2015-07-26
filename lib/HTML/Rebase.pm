@@ -1,4 +1,4 @@
-package HTML::RebaseURL;
+package HTML::Rebase;
 use strict;
 use URI::WithBase;
 use URI::URL;
@@ -9,11 +9,11 @@ $VERSION = '0.01';
 
 =head1 NAME
 
-HTML::RebaseURL - rewrite HTML links to be relative to a given URL
+HTML::Rebase - rewrite HTML links to be relative to a given URL
 
 =head1 SYNOPSIS
 
-  use HTML::RebaseURL qw(rebase_html rebase_css);
+  use HTML::Rebase qw(rebase_html rebase_css);
   my $html = <<HTML;
   <html>
   <head>
@@ -135,7 +135,7 @@ to rewrite them.
 =head1 REPOSITORY
 
 The public repository of this module is 
-L<http://github.com/Corion/html-rebaseurl>.
+L<http://github.com/Corion/html-rebase>.
 
 =head1 SUPPORT
 
@@ -145,8 +145,8 @@ L<http://perlmonks.org/>.
 =head1 BUG TRACKER
 
 Please report bugs in this module via the RT CPAN bug queue at
-L<https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-RebaseURL>
-or via mail to L<html-rebaseurl-Bugs@rt.cpan.org>.
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Rebase>
+or via mail to L<html-rebase-Bugs@rt.cpan.org>.
 
 =head1 AUTHOR
 
