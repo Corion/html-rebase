@@ -68,9 +68,9 @@ sub rebase_html_inplace {
 
     # Rewrite absolute to relative
     # Rewrite all tags with quotes
-    $_[0] =~ s!((?:\bsrc|\bhref)\s*=\s*(["']))(.+?)\2!$1 . relative_url($url,"$3") . $2!ge;
+    $_[0] =~ s!((?:\bsrc|\bhref)\s*=\s*(["']))(.+?)\2!$1 . relative_url($url,"$3") . $2!ige;
     # Rewrite all tags without quotes
-    $_[0] =~ s!((?:\bsrc|\bhref)\s*=\s*)([^>"' ]+)!$1 . '"' . relative_url($url,"$2") . '"'!ge;
+    $_[0] =~ s!((?:\bsrc|\bhref)\s*=\s*)([^>"' ]+)!$1 . '"' . relative_url($url,"$2") . '"'!ige;
 }
 
 =head2 C<< rebase_css >>
@@ -100,7 +100,7 @@ sub rebase_css_inplace {
     #    unless $url->is_absolute;
 
     # Rewrite absolute to relative
-    $_[0] =~ s!(url\(\s*(["']?))([^)]+?)\2!$1 . relative_url($url,"$3") . $2!ge;
+    $_[0] =~ s!(url\(\s*(["']?))([^)]+?)\2!$1 . relative_url($url,"$3") . $2!ige;
 }
 
 sub relative_url {

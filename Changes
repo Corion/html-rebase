@@ -1,2 +1,5 @@
+0.02 20150726
+    + Match attributes case-insensitively
+
 0.01 20150726
     Initial release after discussion on https://www.perlmonks.org/?node_id=1136273
