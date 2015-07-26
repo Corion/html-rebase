@@ -52,7 +52,7 @@ sub rebase_html {
     
     #croak "Can only rewrite relative to an absolute URL!"
     #    unless $url->is_absolute;
-
+    
     # Rewrite absolute to relative
     rebase_html_inplace( $url, $html );
     
@@ -65,6 +65,25 @@ sub rebase_html_inplace {
     
     #croak "Can only rewrite relative to an absolute URL!"
     #    unless $url->is_absolute;
+
+    # Check if we have a <base> tag which should replace the user-supplied URL
+    if( $_[0] =~ s!<\s*\bbase\b[^>]+\bhref=([^>]+)>!! ) {
+        # Extract the HREF:
+        my $href= $1;
+        if( $href =~ m!^(['"])(.*?)\1!i ) {
+            # href="..." , with quotes
+            $href = $2;
+        } elsif( $href =~ m!^([^>"' ]+)! ) {
+            # href=... , without quotes
+            $href = $1;
+        } else {
+            die "Should not get here, weirdo href= tag: [$href]"
+        };
+        
+        my $old_url = $url;
+        $url = relative_url( $url, $href );
+        #warn "base: $old_url / $href => $url";
+    };
 
     # Rewrite absolute to relative
     # Rewrite all tags with quotes
@@ -113,6 +132,8 @@ sub relative_url {
         };
     };
     $res = $res->rel();
+    
+    #warn "$curr / $url => $res";
     
     $res
 };
