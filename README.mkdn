@@ -43,11 +43,10 @@ only rewrites things that look like `url( ... )` .
 
 # CAVEATS
 
-## Does not handle `<base>` tags
+## Does handle the `<base>` tag in a specific way
 
 If the HTML contains a `<base>` tag, it's `href=` attribute
-is not inspected but simply rewritten. Ideally, the `href=` attribute
-should be identical to the URL passed to `rebase_html`.
+is used as the page URL relative to which links are rewritten.
 
 ## Uses regular expressions to do all parsing
 
