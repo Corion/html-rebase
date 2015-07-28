@@ -140,11 +140,10 @@ sub relative_url {
 
 =head1 CAVEATS
 
-=head2 Does not handle C<< <base> >> tags
+=head2 Does handle the C<< <base> >> tag in a specific way
 
 If the HTML contains a C<< <base> >> tag, it's C<< href= >> attribute
-is not inspected but simply rewritten. Ideally, the C<< href= >> attribute
-should be identical to the URL passed to C<< rebase_html >>.
+is used as the page URL relative to which links are rewritten.
 
 =head2 Uses regular expressions to do all parsing
 
