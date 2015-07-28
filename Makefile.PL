@@ -30,6 +30,9 @@ WriteMakefile1(
     BUILD_REQUIRES => {
                         'Exporter'   => '5', # we need the "import" facility
                         'Carp'       => '0',
+                        'URI::URL'   => '0',
+                        'URI::WithBase' => '0',
+
     },
     'NAME'          => $module,
     'LICENSE'       => 'perl',
