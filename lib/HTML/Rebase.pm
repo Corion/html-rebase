@@ -67,10 +67,10 @@ sub rebase_html_inplace {
     #    unless $url->is_absolute;
 
     # Check if we have a <base> tag which should replace the user-supplied URL
-    if( $_[0] =~ s!<\s*\bbase\b[^>]+\bhref=([^>]+)>!! ) {
+    if( $_[0] =~ s!<\s*\bbase\b[^>]+\bhref=([^>]+)>!!i ) {
         # Extract the HREF:
         my $href= $1;
-        if( $href =~ m!^(['"])(.*?)\1!i ) {
+        if( $href =~ m!^(['"])(.*?)\1! ) {
             # href="..." , with quotes
             $href = $2;
         } elsif( $href =~ m!^([^>"' ]+)! ) {
