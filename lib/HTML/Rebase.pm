@@ -31,11 +31,11 @@ HTML::Rebase - rewrite HTML links to be relative to a given URL
   __END__
   <html>
   <head>
-  <link rel="stylesheet" src="../css/site.css" />
+  <link rel="stylesheet" src="css/site.css" />
   </head>
   <body>
   <a href="http://perlmonks.org">Go to Perlmonks.org</a>
-  <a href="../index.html">Go to home page/a>
+  <a href="index.html">Go to home page/a>
   </body>
   </html>
 
