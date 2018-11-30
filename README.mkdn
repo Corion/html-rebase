@@ -62,12 +62,12 @@ to rewrite them.
 # REPOSITORY
 
 The public repository of this module is 
-[http://github.com/Corion/html-rebase](http://github.com/Corion/html-rebase).
+[https://github.com/Corion/html-rebase](https://github.com/Corion/html-rebase).
 
 # SUPPORT
 
 The public support forum of this module is
-[http://perlmonks.org/](http://perlmonks.org/).
+[https://perlmonks.org/](https://perlmonks.org/).
 
 # BUG TRACKER
 
@@ -81,7 +81,7 @@ Max Maischein `corion@cpan.org`
 
 # COPYRIGHT (c)
 
-Copyright 2015 by Max Maischein `corion@cpan.org`.
+Copyright 2015-2018 by Max Maischein `corion@cpan.org`.
 
 # LICENSE
 
