@@ -2,7 +2,7 @@
 use strict;
 use Test::More tests => 1;
 
-use HTML::Rebase qw(rebase_html rebase_css);
+use HTML::Rebase qw(rebase_html);
 my $html = <<HTML;
   <html>
   <head>

@@ -2,7 +2,7 @@
 use strict;
 use Test::More tests => 3;
 
-use HTML::Rebase qw(rebase_html rebase_css);
+use HTML::Rebase qw(rebase_html);
 
 for my $case (
     ['<base href="http://public.website"><a href="/bar/index.html">Go to home page</a>',
@@ -17,4 +17,4 @@ for my $case (
 
       is $local_html, $expected, $name;
 };
-      
+
