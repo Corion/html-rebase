@@ -45,7 +45,7 @@ my %module = (
     },
 
     PREREQ_PM => {
--                       'Text::Unidecode' => 0, # for transliteration
+                        'Text::Unidecode' => 0, # for transliteration
                         'Exporter'   => '5', # we need the "import" facility
                         'Carp'       => '0',
                         'URI::URL'   => '0',
