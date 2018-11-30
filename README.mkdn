@@ -1,3 +1,7 @@
+
+[![Travis Build Status](https://travis-ci.org/Corion/html-rebase.svg?branch=master)](https://travis-ci.org/Corion/html-rebase)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/Corion/html-rebase?branch=master&svg=true)](https://ci.appveyor.com/project/Corion/html-rebase)
+
 # NAME
 
 HTML::Rebase - rewrite HTML links to be relative to a given URL
