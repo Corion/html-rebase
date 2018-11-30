@@ -4,7 +4,7 @@ use URI::WithBase;
 use URI::URL;
 use Exporter 'import';
 use vars qw(@EXPORT_OK $VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 @EXPORT_OK= qw(rebase_html rebase_css rebase_html_inplace rebase_css_inplace);
 
 =head1 NAME
