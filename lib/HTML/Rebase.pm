@@ -3,7 +3,7 @@ use strict;
 use URI::WithBase;
 use URI::URL;
 use Exporter 'import';
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 our @EXPORT_OK= qw(rebase_html rebase_css rebase_html_inplace rebase_css_inplace);
 
 =head1 NAME
