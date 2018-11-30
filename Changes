@@ -1,5 +1,6 @@
 0.04 2018-11-30
     * Also respect <BASE>, not just <base>
+    * Cleaned up prerequisites
     * Moved prerequisites to the proper section (runtime, not build-time)
     * Documentation fixes
 

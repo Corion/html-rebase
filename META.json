@@ -34,7 +34,6 @@
          "requires" : {
             "Carp" : "0",
             "Exporter" : "5",
-            "Text::Unidecode" : "0",
             "URI::URL" : "0",
             "URI::WithBase" : "0",
             "perl" : "5.006"
